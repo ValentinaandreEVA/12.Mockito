@@ -2,10 +2,10 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 
-class filmManagerTest {
+class FilmManagerTest {
     @Test
-    public void testFindAll() {
-        filmsManager manager = new filmsManager();
+    public void TestFindAll() {
+        FilmsManager manager = new FilmsManager();
         String films1 = "Гарри Поттер и Филосовский камень(2001)";
         String films2 = "Гарри Поттер и Тайная комната.(2002)";
         String films3 = "Гарри Поттер и узник Азкабана(2004)";
@@ -26,8 +26,8 @@ class filmManagerTest {
 
 
     @Test
-    public void testFindLastWhenLimitEqualsSize() {
-        filmsManager manager = new filmsManager();
+    public void TestFindLastWhenLimitEqualsSize() {
+        FilmsManager manager = new FilmsManager();
         String films1 = "Гарри Поттер и Филосовский камень(2001)";
         String films2 = "Гарри Поттер и Тайная комната.(2002)";
         String films3 = "Гарри Поттер и узник Азкабана(2004)";
@@ -50,8 +50,8 @@ class filmManagerTest {
 
 
     @Test
-    public void testFindLastWhenLimitMoreSize() {
-        filmsManager manager = new filmsManager();
+    public void TestFindLastWhenLimitMoreSize() {
+        FilmsManager manager = new FilmsManager();
         String films1 = "Гарри Поттер и Филосовский камень(2001)";
         String films2 = "Гарри Поттер и Тайная комната.(2002)";
         String films3 = "Гарри Поттер и узник Азкабана(2004)";
@@ -74,8 +74,8 @@ class filmManagerTest {
 
 
     @Test
-    public void testFindLastWhenLimitLessSize() {
-        filmsManager manager = new filmsManager();
+    public void TestFindLastWhenLimitLessSize() {
+        FilmsManager manager = new FilmsManager();
         String films1 = "Гарри Поттер и Филосовский камень(2001)";
         String films2 = "Гарри Поттер и Тайная комната.(2002)";
         String films3 = "Гарри Поттер и узник Азкабана(2004)";
@@ -103,8 +103,8 @@ class filmManagerTest {
 
 
     @Test
-    public void testFindLastWhenLimitEqualsLessSizeWithCustomLimit() {
-        filmsManager manager = new filmsManager(3);
+    public void TestFindLastWhenLimitEqualsLessSizeWithCustomLimit() {
+        FilmsManager manager = new FilmsManager(3);
         String films1 = "Гарри Поттер и Филосовский камень(2001)";
         String films2 = "Гарри Поттер и Тайная комната.(2002)";
         String films3 = "Гарри Поттер и узник Азкабана(2004)";
@@ -127,8 +127,8 @@ class filmManagerTest {
 
 
     @Test
-    public void testFindLastWhenLimitLessSizeMoreWithCustomLimit() {
-        filmsManager manager = new filmsManager(7);
+    public void TestFindLastWhenLimitLessSizeMoreWithCustomLimit() {
+        FilmsManager manager = new FilmsManager(7);
         String films1 = "Гарри Поттер и Филосовский камень(2001)";
         String films2 = "Гарри Поттер и Тайная комната.(2002)";
         String films3 = "Гарри Поттер и узник Азкабана(2004)";
@@ -153,8 +153,8 @@ class filmManagerTest {
 
 
     @Test
-    public void testFindLastWhenLimitMoreSizeWithCustomLimit() {
-        filmsManager manager = new filmsManager(3);
+    public void TestFindLastWhenLimitMoreSizeWithCustomLimit() {
+        FilmsManager manager = new FilmsManager(3);
         String films1 = "Гарри Поттер и Филосовский камень(2001)";
         String films2 = "Гарри Поттер и Тайная комната.(2002)";
         String films3 = "Гарри Поттер и узник Азкабана(2004)";
